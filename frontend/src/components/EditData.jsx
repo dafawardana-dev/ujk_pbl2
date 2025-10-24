@@ -42,9 +42,7 @@ const TambahData = () => {
         </div>
         
         <div className='container mx-auto p-4 bg-gray-100 '>
-            <div className='mb-4 flex justify-end'>                
-                <Link to="/" className='bg-blue-300 text-gray-700 px-4 py-2 rounded  '>Kembali</Link>
-            </div>
+            
             <div>
                 <form onSubmit={updateData}>
                     <div>
@@ -63,7 +61,10 @@ const TambahData = () => {
                         <label>Jurusan:</label>
                         <input className='border border-gray-400 p-2 rounded mb-4' type="text" name="jurusan" value={jurusan} onChange={(e) => setJurusan(e.target.value)}/>
                     </div>
-                    <button type="submit" className='bg-blue-300 text-gray-700 px-4 py-2 rounded mb-4 '>Simpan</button>
+                    <div className='mb-4 flex justify-between'>                
+                        <Link to="/" className='bg-blue-300 text-gray-700  px-4 py-2 rounded mb-4   '>Kembali</Link>
+                        <button type="submit" className='bg-blue-300 text-gray-700 px-4 py-2 rounded mb-4 '>Simpan</button>
+                    </div>
                 </form>  
             </div>
         </div>
