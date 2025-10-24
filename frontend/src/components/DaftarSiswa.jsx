@@ -51,7 +51,7 @@ const DaftarSiswa = () => {
                         <td className="border border-gray-400 text-center p-2">{siswa.alamat}</td>
                         <td className="border border-gray-400 text-center p-2">{siswa.tgl}</td>
                         <td className="border border-gray-400 text-center p-2">{siswa.jurusan}</td>
-                        <td className="border border-gray-400 text-center p-2"><Link className="bg-green-300 text-gray-700 p-2 rounded"to={`/edit/${siswa.id}`}>Edit</Link></td>
+                        <td className="border border-gray-400 text-center p-2"><Link className="bg-green-300 text-gray-700 p-2 rounded"to={`/edit/${siswa.id}`}>  Edit</Link></td> 
                         <td className="border border-gray-400 text-center p-2"><button onClick={() => handleDelete(siswa.id)} className="bg-red-300 text-gray-700 p-2 rounded">Delete</button></td>
                     </tr>
                 ))}
